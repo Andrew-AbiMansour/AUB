@@ -1,0 +1,18 @@
+objects = cs_add.o cs_amd.o cs_chol.o cs_cholsol.o cs_compress.o cs_counts.o cs_cumsum.o cs_dfs.o cs_dmperm.o cs_droptol.o cs_dropzeros.o cs_dupl.o \
+		  cs_entry.o cs_ereach.o cs_etree.o cs_fkeep.o cs_gaxpy.o cs_happly.o cs_house.o cs_ipvec.o cs_leaf.o cs_load.o cs_lsolve.o cs_ltsolve.o \ 
+		  cs_lu.o cs_lusol.o cs_malloc.o cs_maxtrans.o cs_multiply.o cs_norm.o cs_permute.o cs_pinv.o cs_post.o cs_print.o cs_pvec.o cs_qr.o cs_qrsol.o \
+		  cs_randperm.o cs_reach.o cs_scatter.o cs_scc.o cs_schol.o cs_spsolve.o cs_sqr.o cs_symperm.o cs_tdfs.o cs_transpose.o cs_updown.o cs_usolve.o \
+		  cs_util.o cs_utsolve.o
+
+files = cs_add.cpp cs_amd.cpp cs_chol.cpp cs_cholsol.cpp cs_compress.cpp cs_counts.cpp cs_cumsum.cpp cs_dfs.cpp cs_dmperm.cpp cs_droptol.cpp \
+		cs_dropzeros.cpp cs_dupl.cpp cs_entry.cpp cs_ereach.cpp cs_etree.cpp cs_fkeep.cpp cs_gaxpy.cpp cs_happly.cpp cs_house.cpp cs_ipvec.cpp \
+		cs_leaf.cpp cs_load.cpp cs_lsolve.cpp cs_ltsolve.cpp cs_lu.cpp cs_lusol.cpp cs_malloc.cpp cs_maxtrans.cpp cs_multiply.cpp cs_norm.cpp \
+		cs_permute.cpp cs_pinv.cpp cs_post.cpp cs_print.cpp cs_pvec.cpp cs_qr.cpp cs_qrsol.cpp cs_randperm.cpp cs_reach.cpp cs_scatter.cpp cs_scc.cpp \
+	 	cs_schol.cpp cs_spsolve.cpp cs_sqr.cpp cs_symperm.cpp cs_tdfs.cpp cs_transpose.cpp cs_updown.cpp cs_usolve.cpp \
+		cs_util.cpp cs_utsolve.cpp
+
+CC = g++
+CFLAGS = -fpermissive -w -O3
+
+$(objects): %.o: %.cpp
+        $(CC) -c $(CFLAGS) $< -o $@
