@@ -250,7 +250,9 @@ int main(int argc, char* argv[]) {
 
 		cout << "====================================================================" << endl;
 		cout << "====================================================================" << endl;
-		cout << "CVFEM PDE solver for Lisegang systems, written by Andrew Abi Mansour" << endl;
+		cout << "PDE solver for Lisegang systems, written by Andrew Abi Mansour" << endl;
+		cout << "The code was supposed to specifically simulate revert spacing, on " << endl;
+		cout << "any type of geometrical domain, but it is not yet fnished." << endl;
 		cout << "------------------------------------------------------------------" << endl;
 		cout << "Program in Computational Science, American University of Beirut" << endl;
 		cout << "====================================================================" << endl;
